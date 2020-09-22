@@ -9,10 +9,8 @@ import PayScreen from "./screens/Pay";
 
 import { Ionicons, AntDesign, Entypo } from "@expo/vector-icons";
 
-const colors = {
-  iconActive: "#fff",
-  iconInnactive: "#92929c",
-};
+import { colors } from './style/colors'
+
 const Icons = {
   Home: {
     lib: AntDesign,
@@ -36,17 +34,23 @@ const Tab = createBottomTabNavigator();
 
 const Navigation = () => (
   <Tab.Navigator
-    screenOptions={({ route }) => ({
-      tabBarIcon: ({ color, size }) => {
-        if (route.name === "Pay") return <PayButton />;
+    screenOptions={({ route, navigation }) => ({
+      tabBarIcon: ({ color, size, focused }) => {
+        if (route.name === "Pay")
+          return (
+            <PayButton
+              onPress={() => navigation.navigate("Pay")}
+              focused={focused}
+            />
+          );
         const { lib: Icon, name } = Icons[route.name];
         return <Icon name={name} size={size} color={color} />;
       },
     })}
     tabBarOptions={{
       style: {
-        backgroundColor: "#202020",
-        borderTopColor: "#323232",
+        backgroundColor: colors.black,
+        borderTopColor: colors.grey,
       },
       activeTintColor: colors.iconActive,
       inactiveTintColor: colors.iconInnactive,
