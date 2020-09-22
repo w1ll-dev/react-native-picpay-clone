@@ -1,6 +1,10 @@
-import React from 'react';
-import { Text } from 'react-native';
+import React from "react";
+import { Text, View } from "react-native";
 
-const Pay = () => <Text>Pay</Text>;
+const Pay = () => (
+  <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
+    <Text>Pay</Text>
+  </View>
+);
 
 export default Pay;

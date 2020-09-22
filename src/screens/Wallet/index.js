@@ -1,6 +1,10 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
-const Wallet = () => <Text>Wallet</Text>;
+const Wallet = () => (
+  <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
+    <Text>Wallet</Text>
+  </View>
+);
 
 export default Wallet;
