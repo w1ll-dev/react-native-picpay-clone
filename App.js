@@ -1,4 +1,7 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import Main from './src';
+import App from './src';
+
+const Main = () => <App/>;
 
 export default Main;
