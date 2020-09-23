@@ -17,7 +17,7 @@ const PayButton = ({ onPress, focused }) => (
       <MaterialIcons
         name={"attach-money"}
         size={30}
-        color={focused ? colors.white : colors.black}
+        color={focused ? colors.white : colors.dark}
       />
       <Label focused={focused}>Pagar</Label>
     </Button>
