@@ -12,6 +12,9 @@ import {
 } from "./style";
 import { Row } from "../../components/standard";
 import { Sugestions } from "../../components/Sugestions";
+import { Activities } from "../../components/Activities";
+import { Tips } from "../../components/Tips";
+import { Banner } from "../../components/Banner";
 
 const Home = () => (
   <Wrapper>
@@ -37,6 +40,9 @@ const Home = () => (
         </Row>
       </Header>
       <Sugestions/>
+      <Activities/>
+      <Tips/>
+      <Banner/>
     </ScrollContainer>
   </Wrapper>
 );
