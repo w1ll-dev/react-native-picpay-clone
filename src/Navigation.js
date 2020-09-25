@@ -49,7 +49,7 @@ const Navigation = () => (
     })}
     tabBarOptions={{
       style: {
-        backgroundColor: colors.black,
+        backgroundColor: colors.dark,
         borderTopColor: colors.grey,
       },
       activeTintColor: colors.iconActive,
