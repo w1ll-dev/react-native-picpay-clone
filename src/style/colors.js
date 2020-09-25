@@ -10,5 +10,18 @@ export const colors = {
   dark: "#131418",
   black: "#000",
   grey: "#323232",
-  lightGrey: "#1e222b" 
+  lightGrey: "#1e222b",
+  danger: "#f75175",
+  bannerColor: "#5c73b1",
+  
+  listCardsColor: [
+    '#aaa',
+    '#caa',
+    '#faa',
+    '#ece',
+    '#edb',
+    '#bac',
+    '#bac',
+    '#fae',
+  ]
 };
