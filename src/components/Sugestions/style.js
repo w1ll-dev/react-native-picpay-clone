@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 import { colors } from '../../style/colors';
 
 export const ScrollContainer = styled.ScrollView.attrs(() => ({
+  showsHorizontalScrollIndicator: false,
   horizontal: true,
   contentContainerStyle: {
     alignItems: "center",
