@@ -1,9 +1,8 @@
 import styled from "styled-components/native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { colors } from "../../style/colors";
 
-export const Wrapper = styled(SafeAreaView)`
-  background: #000;
+export const Wrapper = styled.SafeAreaView`
+  background: ${colors.black};
   flex: 1;
 `;
 
@@ -31,4 +30,3 @@ export const Balance = styled.Text`
 `;
 
 export const ScrollContainer = styled.ScrollView``;
-
