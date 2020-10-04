@@ -1,16 +1,14 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import Navigation from "./Navigation";
-import { StatusBar } from "react-native";
-import { colors } from "./style/colors";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 const App = () => (
-  <>
-    <StatusBar barStyle={"light-content"} backgroundColor={colors.black} />
+  <SafeAreaProvider>
     <NavigationContainer>
       <Navigation />
     </NavigationContainer>
-  </>
+  </SafeAreaProvider>
 );
 
 export default App;
